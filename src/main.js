@@ -19,6 +19,8 @@ moment().format();
 /* Firebase */
 import firebase from './firebase';
 
+Vue.config.productionTip = false
+
 /* Main Vue instance */
 let app;
 firebase.auth().onAuthStateChanged(function(user) {
